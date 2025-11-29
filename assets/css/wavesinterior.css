@@ -51,6 +51,39 @@ body {
   border: none;
 }
 
+/* Make inputs look same inside modal */
+.modal .section-heading h2,
+.modal .section-heading em {
+  color: inherit;
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  background: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.modal .main-button {
+  background-color: #279da4 !important;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+}
+
+.modal .modal-content {
+  padding: 30px;
+  border-radius: 12px;
+}
+
 img {
   width: 100%;
   overflow: hidden;

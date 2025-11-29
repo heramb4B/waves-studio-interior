@@ -906,6 +906,97 @@
       </div>
     </footer>
 
+    <!-- Contact Form Popup Modal -->
+    <div class="modal-body contact-us">
+      <div class="modal fade" id="contactPopup" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content" style="border-radius: 12px; padding: 20px">
+            <div class="modal-header">
+              <h4 class="modal-title">Send us a Message</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <form id="contact" action="contact.php" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="section-heading">
+                      <h2>
+                        Looking For The Best Interior?<br /><em
+                          >Send a message now</em
+                        >!
+                      </h2>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <input
+                      name="name"
+                      type="text"
+                      id="name"
+                      placeholder="Name*"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-lg-6">
+                    <input
+                      name="phone"
+                      type="text"
+                      id="phone"
+                      placeholder="Phone Number*"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-lg-6">
+                    <input
+                      name="email"
+                      type="text"
+                      id="email"
+                      pattern="[^ @]*@[^ @]*"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-lg-6">
+                    <input
+                      name="subject"
+                      type="text"
+                      id="subject"
+                      placeholder="Subject*"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-lg-12">
+                    <textarea
+                      name="message"
+                      class="form-control"
+                      id="message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="col-lg-12 mt-3">
+                    <button type="submit" id="form-submit" class="main-button">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -931,6 +1022,15 @@
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
       });
+    </script>
+    <script>
+      // Open popup after page loads
+      window.onload = function () {
+        var contactModal = new bootstrap.Modal(
+          document.getElementById("contactPopup")
+        );
+        contactModal.show();
+      };
     </script>
   </body>
 </html>
