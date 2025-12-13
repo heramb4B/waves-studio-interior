@@ -1,0 +1,5 @@
+wave_studio_interior
+
+database_name: u349380217_wave_studio
+username: u349380217_root
+password: c~Z73pE7>

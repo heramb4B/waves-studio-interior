@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="assets/images/favicon.jpg" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Founder's Desk - Waaves Studio Interior Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/wavesinterior.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <style>
+      .quick-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .quick-links li {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .quick-links a {
+        font-size: 15px;
+        color: #279da4; /* SAME teal color as Customer Care */
+        font-weight: 400; /* same normal weight */
+        text-decoration: none;
+        transition: 0.2s ease;
+      }
+
+      .quick-links a:hover {
+        color: #5ba9b0; /* your lighter primary shade */
+        text-decoration: underline;
+      }
+
+      .quick-links-widget h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #285260; /* your dark theme color */
+        margin-bottom: 15px;
+      }
+
+      .founder-section {
+        background: #f8f9fa; /* subtle, premium tone */
+      }
+
+      .founder-title {
+        font-size: 32px;
+        color: #285260;
+        font-weight: 700;
+      }
+
+      .founder-text {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #555;
+        margin-bottom: 18px;
+      }
+
+      .founder-section img {
+        max-height: 480px;
+        width: auto;
+        object-fit: cover;
+        border-radius: 22px;
+      }
+
+      .founder-section .col-lg-5 {
+        display: flex;
+        flex-direction: column; /* THIS is the missing piece */
+        align-items: center;
+      }
+
+      .founder-photo {
+        text-align: center;
+      }
+
+      .founder-name {
+        font-size: 20px;
+        font-weight: 600;
+        color: #285260;
+        margin-bottom: 4px;
+      }
+
+      .founder-role {
+        font-size: 15px;
+        color: #279da4;
+        margin: 0;
+      }
+
+      .founder-img {
+        max-height: 450px;
+        width: auto;
+        object-fit: cover;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="loader">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="34px"
+        height="40px"
+        viewBox="0 0 24 30"
+        style="enable-background: new 0 0 50 50"
+        xml:space="preserve"
+      >
+        <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.2">
+          <animate
+            attributeName="opacity"
+            attributeType="XML"
+            values="0.2; 1; .2"
+            begin="0s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="height"
+            attributeType="XML"
+            values="10; 20; 10"
+            begin="0s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="y"
+            attributeType="XML"
+            values="10; 5; 10"
+            begin="0s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+        </rect>
+        <rect x="8" y="10" width="4" height="10" fill="#333" opacity="0.2">
+          <animate
+            attributeName="opacity"
+            attributeType="XML"
+            values="0.2; 1; .2"
+            begin="0.15s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="height"
+            attributeType="XML"
+            values="10; 20; 10"
+            begin="0.15s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="y"
+            attributeType="XML"
+            values="10; 5; 10"
+            begin="0.15s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+        </rect>
+        <rect x="16" y="10" width="4" height="10" fill="#333" opacity="0.2">
+          <animate
+            attributeName="opacity"
+            attributeType="XML"
+            values="0.2; 1; .2"
+            begin="0.3s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="height"
+            attributeType="XML"
+            values="10; 20; 10"
+            begin="0.3s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="y"
+            attributeType="XML"
+            values="10; 5; 10"
+            begin="0.3s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+        </rect>
+      </svg>
+    </div>
+
+    <header id="#top">
+      <nav class="main-navigation navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/images/Untitled design.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="founder.html"
+                  >FOUNDER'S DESK</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page-banner change-name">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="header-text">
+              <h2><em>FOUNDER'S</em> DESK</h2>
+              <p>
+                A vision shaped by creativity and crafted with intention. Design
+                that feels personal, timeless, and beautifully thoughtful.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="founder-section py-5">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-5 text-center">
+            <img
+              src="assets/images/founder-image-1.jpeg"
+              alt="Founder Image"
+              class="img-fluid rounded shadow-sm founder-img"
+            />
+
+            <div class="founder-photo mt-3">
+              <h5 class="founder-name">Mrs. Vaishnavi</h5>
+              <p class="founder-role">Founder, Waaves Studio Interior</p>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <h2 class="mb-3 founder-title">From the Founder’s Desk</h2>
+            <p class="founder-text">
+              At the heart of our design studio is a passion for transforming
+              spaces into meaningful experiences. Our founder -
+              <strong> Mrs. Vaishnavi </strong>
+              brings a unique blend of creativity, technical understanding, and
+              a deep appreciation for aesthetics—ensuring every project is
+              crafted with intention, warmth, and timeless elegance.
+            </p>
+            <p class="founder-text">
+              With a strong belief that design should feel personal and
+              intuitive, the studio focuses on blending functional planning with
+              thoughtful styling. Every project—whether a modern home, a cozy
+              living space, or a cultural-inspired setting—is approached with an
+              eye for detail and a commitment to bringing clients' visions to
+              life with authenticity and character.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-7 order-lg-1 order-2">
+            <p class="founder-text">
+              Over the years, the founder has explored diverse design
+              influences—from contemporary minimalism to handcrafted traditional
+              artistry. This versatility reflects in the studio’s work, where
+              each space is treated as a canvas that celebrates texture, color,
+              culture, and the personality of the people who live in it.
+            </p>
+            <p class="founder-text">
+              Through every project, the goal remains simple: to design spaces
+              that feel inviting, balanced, and beautifully connected to the
+              people who occupy them.
+            </p>
+          </div>
+          <div class="col-lg-5 order-lg-2 order-1 mb-4 mb-lg-0">
+            <img
+              src="assets/images/founder-image-2.jpeg"
+              alt="Founder Image"
+              class="img-fluid rounded shadow-sm"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="explore-item">
+      <div class="container expanded">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading">
+              <h2>Minimalistic Design for 2 bedrooms</h2>
+            </div>
+            <div class="main-image">
+              <img
+                src="assets/images/explore-item-01.jpg"
+                alt="master bedroom design"
+              />
+            </div>
+            <div class="project-info">
+              <div class="row">
+                <div class="col-lg-2">
+                  <div class="info-item">
+                    <h6>Architect:</h6>
+                    <span>Catherine Rose</span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="info-item">
+                    <h6>Client:</h6>
+                    <span>TemplateMo</span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="info-item">
+                    <h6>Terms:</h6>
+                    <span>6-12 Months</span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="info-item">
+                    <h6>Project Type:</h6>
+                    <span>Interior Design</span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="info-item">
+                    <h6>Strategy:</h6>
+                    <span>Clean &amp; Minimal</span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="info-item">
+                    <h6>Date:</h6>
+                    <span>January 22, 2022</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto toril beatae
+              vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+              voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+              magni dolores eos qui ratione voluptatem sequida nesciunt. Neque
+              porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit, sed quia non numquam eius modi
+              tempora incidunt ut labore et dolore magnam aliquam quaerat
+              voluptatem. <br /><br />This is an Interior Designer HTML5
+              Template that is 100% totally free to download, edit and use for
+              your commercial or business websites. You are
+              <strong>NOT allowed</strong> to redistribute the downloadable ZIP
+              file of this template on any other website. Please
+              <a
+                rel="nofollow"
+                href="https://templatemo.com/contact"
+                target="_blank"
+                >contact TemplateMo</a
+              >
+              website for more information. Thank you.
+              <strong
+                >Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium</strong
+              >, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img src="assets/images/explore-item-02.jpg" alt="" />
+          </div>
+          <div class="col-lg-6">
+            <img src="assets/images/explore-item-03.jpg" alt="" />
+          </div>
+          <div class="col-lg-12">
+            <div class="down-content">
+              <h4>Incredible Work</h4>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto toril
+                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequida
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="projects-pagination">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="left-pagination">
+                    <img
+                      class="float-start"
+                      src="assets/images/pagination-left-image.jpg"
+                      alt=""
+                    />
+                    <div class="right-content">
+                      <a href="explore.html"
+                        ><h6>Minimalistic Living Room</h6></a
+                      >
+                      <span>Interior Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="right-pagination">
+                    <img
+                      class="float-end"
+                      src="assets/images/pagination-right-image.jpg"
+                      alt=""
+                    />
+                    <div class="float-end left-content">
+                      <a href="explore.html"
+                        ><h6>Futuristic Interior Concept</h6></a
+                      >
+                      <span>Interior Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2>Looking to Work On A Project ?</h2>
+          </div>
+          <div class="col-lg-4">
+            <div class="white-button">
+              <a href="#">Contact Us Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <footer class="no-margin-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="about-widget">
+              <img src="assets/images/footer-logo1.jpg" />
+              <p>
+                Crafting refined interiors that elevate everyday living. Our
+                designs blend luxury, detail, and thoughtful craftsmanship to
+                create spaces that feel uniquely yours.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 offset-lg-2">
+            <div class="footer-widget quick-links-widget">
+              <h4>Quick Links</h4>
+              <ul class="quick-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="founder.html">Founder's Desk</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="customer-care">
+              <h4>Customer Care</h4>
+              <ul class="info">
+                <li><a href="#">+91 00000 00000</a></li>
+                <!-- <li><a href="#">090-080-0760</a></li> -->
+                <li><a href="mailto:wavestudio4ws@gmail.com">Mail Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="follow-us">
+              <h4>Follow Us</h4>
+              <ul class="social-links">
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      />
+                    </svg>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/wavestudiointerior?igsh=MTFhazRwdHpoNzdxbw%3D%3D&utm_source=qr"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-instagram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 3c1.657 0 1.865.006 2.52.036.656.03 1.11.14 1.364.232.34.132.583.29.839.546.256.256.414.5.546.839.092.254.202.708.232 1.364.03.655.036.863.036 2.52s-.006 1.865-.036 2.52c-.03.656-.14 1.11-.232 1.364a2.709 2.709 0 0 1-.546.839 2.709 2.709 0 0 1-.839.546c-.254.092-.708.202-1.364.232-.655.03-1.863.036-2.52.036s-1.865-.006-2.52-.036c-.656-.03-1.11-.14-1.364-.232a2.709 2.709 0 0 1-.839-.546 2.709 2.709 0 0 1-.546-.839c-.092-.254-.202-.708-.232-1.364C3.006 9.865 3 9.657 3 8s.006-1.865.036-2.52c.03-.656.14-1.11.232-1.364.132-.34.29-.583.546-.839.256-.256.5-.414.839-.546.254-.092.708-.202 1.364-.232C6.135 3.006 6.343 3 8 3zm0-1.5c-1.68 0-1.896.007-2.556.037-.659.03-1.113.14-1.508.299a4.209 4.209 0 0 0-1.53 1.006A4.209 4.209 0 0 0 1.4 4.473c-.159.395-.269.849-.299 1.508C1.071 6.642 1.064 6.859 1.064 8c0 1.141.007 1.358.037 2.018.03.659.14 1.113.299 1.508.263.654.655 1.188 1.006 1.53.342.352.876.744 1.53 1.006.395.159.849.269 1.508.299.66.03.876.037 2.556.037s1.896-.007 2.556-.037c.659-.03 1.113-.14 1.508-.299a4.209 4.209 0 0 0 1.53-1.006 4.209 4.209 0 0 0 1.006-1.53c.159-.395.269-.849.299-1.508.03-.66.037-.876.037-2.556s-.007-1.896-.037-2.556c-.03-.659-.14-1.113-.299-1.508a4.209 4.209 0 0 0-1.006-1.53 4.209 4.209 0 0 0-1.53-1.006c-.395-.159-.849-.269-1.508-.299C9.896 1.507 9.68 1.5 8 1.5z"
+                      />
+                      <path
+                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"
+                      />
+                      <circle cx="11.75" cy="4.25" r="1" />
+                    </svg>
+                    Instagram
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.youtube.com/@wavestudiointerior"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-youtube"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8.051 1.999h-.002c-.345 0-3.465.007-4.803.37-.94.25-1.683.993-1.933 1.933C1 5.64 1 8 1 8s0 2.36.313 3.698c.25.94.993 1.683 1.933 1.933C4.584 14.007 7.704 14 8.05 14h.002c.345 0 3.465-.007 4.803-.37.94-.25 1.683-.993 1.933-1.933C15 10.36 15 8 15 8s0-2.36-.313-3.698c-.25-.94-.993-1.683-1.933-1.933C11.516 2.006 8.396 2 8.051 2z"
+                      />
+                      <path d="M6.545 5.568v4.864L10.545 8 6.545 5.568z" />
+                    </svg>
+                    YouTube
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="col-lg-6 offset-lg-6">
+            <h4>Subscribe To Our Newsletter</h4>
+            <form id="subscribe" action="" method="get">
+              <div class="row">
+                <div class="col-lg-12">
+                  <input
+                    name="email"
+                    type="text"
+                    id="email"
+                    pattern="[^ @]*@[^ @]*"
+                    placeholder="Type your email..."
+                    required=""
+                  />
+                  <button type="submit" id="form-submit" class="text-button">
+                    Submit
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div> -->
+          <div class="col-lg-12">
+            <div class="sub-footer">
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>
+                    Copyright © <span id="currentYear"></span> Waaves Studio
+                    Interior <br />
+                  </p>
+                </div>
+
+                <div class="col-lg-6">
+                  <a href="#top" class="scroll-to-top">
+                    Go to Top
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-arrow-bar-up"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    </script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".loader").fadeToggle();
+      }, 1500);
+      $("a[href='#top']").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="assets/images/favicon.jpg" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Contact Us - Waaves Interior Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/wavesinterior.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <style>
+      .quick-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .quick-links li {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .quick-links a {
+        font-size: 15px;
+        color: #279da4; /* SAME teal color as Customer Care */
+        font-weight: 400; /* same normal weight */
+        text-decoration: none;
+        transition: 0.2s ease;
+      }
+
+      .quick-links a:hover {
+        color: #5ba9b0; /* your lighter primary shade */
+        text-decoration: underline;
+      }
+
+      .quick-links-widget h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #285260; /* your dark theme color */
+        margin-bottom: 15px;
+      }
+
+      /* Social boxes below the contact form */
+      .social-boxes {
+        margin-top: 30px;
+        gap: 16px;
+        display: flex;
+        flex-wrap: wrap; /* lets boxes wrap nicely on small screens */
+        justify-content: center;
+      }
+
+      .social-card {
+        flex: 1 1 220px; /* grow, shrink, base width 220px */
+        max-width: 320px; /* prevents too wide cards on big screens */
+        min-width: 180px;
+        border-radius: 12px;
+        background: #f8f9fa;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        padding: 18px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .social-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+        text-decoration: none;
+      }
+
+      /* Icon wrapper */
+      .social-icon {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      }
+
+      /* label */
+      .social-label {
+        font-size: 15px;
+        font-weight: 600;
+        color: #284b4d;
+        margin: 0;
+      }
+
+      /* subtitle / handle */
+      .social-sub {
+        font-size: 13px;
+        color: #5f7d7f;
+        margin: 0;
+      }
+
+      /* brand color accents (optional) */
+      .social-card.facebook .social-icon {
+        background: linear-gradient(180deg, #3b5998, #2d4373);
+        color: #fff;
+      }
+      .social-card.instagram .social-icon {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        color: #fff;
+      }
+      .social-card.youtube .social-icon {
+        background: linear-gradient(180deg, #ff0000, #cc0000);
+        color: #fff;
+      }
+
+      /* make icons responsive */
+      .social-icon svg {
+        width: 26px;
+        height: 26px;
+        display: block;
+      }
+
+      /* stack horizontally on medium+ screens: the container that's used has col-lg-6 + col-lg-6,
+   so to make the boxes align below that width, place .social-boxes inside a full-width col */
+      @media (min-width: 992px) {
+        .social-boxes {
+          justify-content: space-between;
+        }
+      }
+
+      /* Dropdown styling to match input fields */
+      select.form-control {
+        height: 52px;
+        padding: 10px 14px;
+        font-size: 15px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        color: #333;
+      }
+
+      select.form-control:focus {
+        border-color: #279da4;
+        box-shadow: none;
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="loader">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="34px"
+        height="40px"
+        viewBox="0 0 24 30"
+        style="enable-background: new 0 0 50 50"
+        xml:space="preserve"
+      >
+        <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.2">
+          <animate
+            attributeName="opacity"
+            attributeType="XML"
+            values="0.2; 1; .2"
+            begin="0s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="height"
+            attributeType="XML"
+            values="10; 20; 10"
+            begin="0s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="y"
+            attributeType="XML"
+            values="10; 5; 10"
+            begin="0s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+        </rect>
+        <rect x="8" y="10" width="4" height="10" fill="#333" opacity="0.2">
+          <animate
+            attributeName="opacity"
+            attributeType="XML"
+            values="0.2; 1; .2"
+            begin="0.15s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="height"
+            attributeType="XML"
+            values="10; 20; 10"
+            begin="0.15s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="y"
+            attributeType="XML"
+            values="10; 5; 10"
+            begin="0.15s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+        </rect>
+        <rect x="16" y="10" width="4" height="10" fill="#333" opacity="0.2">
+          <animate
+            attributeName="opacity"
+            attributeType="XML"
+            values="0.2; 1; .2"
+            begin="0.3s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="height"
+            attributeType="XML"
+            values="10; 20; 10"
+            begin="0.3s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="y"
+            attributeType="XML"
+            values="10; 5; 10"
+            begin="0.3s"
+            dur="0.8s"
+            repeatCount="indefinite"
+          />
+        </rect>
+      </svg>
+    </div>
+
+    <header id="#top">
+      <nav class="main-navigation navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/images/Untitled design.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="founder.html">FOUNDER'S DESK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page-banner change-name">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="header-text">
+              <h2><em>Contact</em> Us</h2>
+              <p>
+                Let’s bring your dream space to life. Reach out and we’ll craft
+                something beautiful together.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact-page-map">
+      <div class="container expanded">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- You can easily copy and paste your own map point from Google Maps -> Share -> Embed a map -->
+
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d144860.8833206807!2d73.78056631810732!3d18.524761373989723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1763656368561!5m2!1sen!2sin"
+                width="100%"
+                height="550px"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us-page">
+      <div class="container">
+        <div class="col-lg-12">
+          <div class="contact-page-form">
+            <div class="row">
+              <div class="col-lg-6 align-self-center">
+                <form id="contact" action="contact.php" method="post">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="section-heading">
+                        <h2>
+                          Don't be Hesitated<br /><em>Send a message now</em>!
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <input
+                        name="name"
+                        type="text"
+                        id="name"
+                        placeholder="Name*"
+                        required=""
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <input
+                        name="phone"
+                        type="text"
+                        id="phone"
+                        placeholder="Phone Number*"
+                        required=""
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <input
+                        name="email"
+                        type="text"
+                        id="email"
+                        pattern="[^ @]*@[^ @]*"
+                        placeholder="Your Email"
+                        required=""
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <select
+                        name="subject"
+                        id="subject"
+                        required
+                        class="form-control"
+                      >
+                        <option value="" disabled selected>
+                          Select Project Type*
+                        </option>
+                        <option value="Residential">Residential</option>
+                        <option value="Commercial">Commercial</option>
+                      </select>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <textarea
+                        name="message"
+                        type="text"
+                        class="form-control"
+                        id="message"
+                        placeholder="Message"
+                        required=""
+                      ></textarea>
+                    </div>
+                    <div class="col-lg-12">
+                      <button
+                        type="submit"
+                        id="form-submit"
+                        class="main-button"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6">
+                <div class="right-info">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="48"
+                          viewBox="0 0 24 24"
+                          width="48"
+                        >
+                          <path d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 2c-4.97 0-9 4.03-9 9 0 4.17 2.84 7.67 6.69 8.69L12 22l2.31-2.31C18.16 18.67 21 15.17 21 11c0-4.97-4.03-9-9-9zm0 2c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.3c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                          />
+                        </svg>
+                      </div>
+                      <h6>Mailing Address</h6>
+                      <span>Bhusari Colony, Kothrud, Pune</span>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          enable-background="new 0 0 24 24"
+                          height="44"
+                          viewBox="0 0 24 24"
+                          width="44"
+                        >
+                          <g>
+                            <rect fill="none" height="24" width="24" />
+                            <path
+                              d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h9v-2H4V8l8,5l8-5v5h2V6C22,4.9,21.1,4,20,4z M12,11L4,6h16L12,11z M19,15l4,4 l-4,4v-3h-4v-2h4V15z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <h6>Email Address</h6>
+                      <span>wavestudio4ws@gmail.com</span>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          enable-background="new 0 0 24 24"
+                          height="48"
+                          viewBox="0 0 24 24"
+                          width="48"
+                        >
+                          <g>
+                            <rect fill="none" height="24" width="24"></rect>
+                          </g>
+                          <g>
+                            <g>
+                              <path
+                                class="icon"
+                                d="M21,12.22C21,6.73,16.74,3,12,3c-4.69,0-9,3.65-9,9.28C2.4,12.62,2,13.26,2,14v2c0,1.1,0.9,2,2,2h1v-6.1 c0-3.87,3.13-7,7-7s7,3.13,7,7V19h-8v2h8c1.1,0,2-0.9,2-2v-1.22c0.59-0.31,1-0.92,1-1.64v-2.3C22,13.14,21.59,12.53,21,12.22z"
+                              ></path>
+                              <circle
+                                class="icon"
+                                cx="9"
+                                cy="13"
+                                r="1"
+                              ></circle>
+                              <circle
+                                class="icon"
+                                cx="15"
+                                cy="13"
+                                r="1"
+                              ></circle>
+                              <path
+                                class="icon"
+                                d="M18,11.03C17.52,8.18,15.04,6,12.05,6c-3.03,0-6.29,2.51-6.03,6.45c2.47-1.01,4.33-3.21,4.86-5.89 C12.19,9.19,14.88,11,18,11.03z"
+                              ></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <h6>Chat With Us</h6>
+                      <span>+91 00000 00000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Social boxes: place this under the form + right-info -->
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="social-boxes">
+                <a
+                  class="social-card facebook"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our Facebook page"
+                >
+                  <div class="social-icon" aria-hidden="true">
+                    <!-- Facebook SVG -->
+                    <svg
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M22 12.07C22 6.58 17.52 2 12 2S2 6.58 2 12.07c0 4.83 3.44 8.83 7.94 9.66v-6.83H7.9v-2.83h2.04V9.41c0-2.01 1.2-3.12 3.03-3.12.88 0 1.8.16 1.8.16v1.98h-1.01c-.99 0-1.3.62-1.3 1.26v1.5h2.22l-.35 2.83h-1.87v6.83C18.56 20.9 22 16.9 22 12.07z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="social-text">
+                    <p class="social-label">Facebook</p>
+                    <p class="social-sub">@wavestudiointerior</p>
+                  </div>
+                </a>
+
+                <a
+                  class="social-card instagram"
+                  href="https://www.instagram.com/wavestudiointerior/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our Instagram profile"
+                >
+                  <div class="social-icon" aria-hidden="true">
+                    <!-- Instagram SVG -->
+                    <svg
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 2.2c3.2 0 3.6 0 4.87.07 1.17.07 1.8.25 2.22.42.53.22.9.48 1.3.88.4.4.66.77.88 1.3.17.42.35 1.05.42 2.22.07 1.27.07 1.67.07 4.87s0 3.6-.07 4.87c-.07 1.17-.25 1.8-.42 2.22-.22.53-.48.9-.88 1.3-.4.4-.77.66-1.3.88-.42.17-1.05.35-2.22.42-1.27.07-1.67.07-4.87.07s-3.6 0-4.87-.07c-1.17-.07-1.8-.25-2.22-.42-.53-.22-.9-.48-1.3-.88-.4-.4-.66-.77-.88-1.3-.17-.42-.35-1.05-.42-2.22C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.87c.07-1.17.25-1.8.42-2.22.22-.53.48-.9.88-1.3.4-.4.77-.66 1.3-.88.42-.17 1.05-.35 2.22-.42C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3 0-3.33 0-4.5.06-1 .06-1.55.23-1.92.39-.48.21-.82.46-1.18.82-.36.36-.61.7-.82 1.18-.16.37-.33.92-.39 1.92-.06 1.17-.06 1.5-.06 4.5s0 3.33.06 4.5c.06 1 .23 1.55.39 1.92.21.48.46.82.82 1.18.36.36.7.61 1.18.82.37.16.92.33 1.92.39 1.17.06 1.5.06 4.5.06s3.33 0 4.5-.06c1-.06 1.55-.23 1.92-.39.48-.21.82-.46 1.18-.82.36-.36.61-.7.82-1.18.16-.37.33-.92.39-1.92.06-1.17.06-1.5.06-4.5s0-3.33-.06-4.5c-.06-1-.23-1.55-.39-1.92-.21-.48-.46-.82-.82-1.18-.36-.36-.7-.61-1.18-.82-.37-.16-.92-.33-1.92-.39C15.33 4 15 4 12 4zM12 7.4a4.6 4.6 0 1 1 0 9.2 4.6 4.6 0 0 1 0-9.2zm0 1.8a2.8 2.8 0 1 0 .001 5.601A2.8 2.8 0 0 0 12 9zm4.9-2.9a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="social-text">
+                    <p class="social-label">Instagram</p>
+                    <p class="social-sub">@wavestudiointerior</p>
+                  </div>
+                </a>
+
+                <a
+                  class="social-card youtube"
+                  href="https://www.youtube.com/@wavestudiointerior"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our YouTube channel"
+                >
+                  <div class="social-icon" aria-hidden="true">
+                    <!-- YouTube SVG -->
+                    <svg
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.8 3.6 12 3.6 12 3.6s-7.8 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.6.5 9.4.5 9.4.5s7.8 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.8 15.5V8.5l6.2 3.5-6.2 3.5z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="social-text">
+                    <p class="social-label">YouTube</p>
+                    <p class="social-sub">Waaves Studio</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="no-margin-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="about-widget">
+              <img src="assets/images/footer-logo1.jpg" />
+              <p>
+                Crafting refined interiors that elevate everyday living. Our
+                designs blend luxury, detail, and thoughtful craftsmanship to
+                create spaces that feel uniquely yours.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 offset-lg-2">
+            <div class="footer-widget quick-links-widget">
+              <h4>Quick Links</h4>
+              <ul class="quick-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="founder.html">Founder's Desk</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="customer-care">
+              <h4>Customer Care</h4>
+              <ul class="info">
+                <li><a href="#">+91 00000 00000</a></li>
+                <!-- <li><a href="#">090-080-0760</a></li> -->
+                <li><a href="mailto:wavestudio4ws@gmail.com">Mail Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="follow-us">
+              <h4>Follow Us</h4>
+              <ul class="social-links">
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      />
+                    </svg>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/wavestudiointerior?igsh=MTFhazRwdHpoNzdxbw%3D%3D&utm_source=qr"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-instagram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 3c1.657 0 1.865.006 2.52.036.656.03 1.11.14 1.364.232.34.132.583.29.839.546.256.256.414.5.546.839.092.254.202.708.232 1.364.03.655.036.863.036 2.52s-.006 1.865-.036 2.52c-.03.656-.14 1.11-.232 1.364a2.709 2.709 0 0 1-.546.839 2.709 2.709 0 0 1-.839.546c-.254.092-.708.202-1.364.232-.655.03-1.863.036-2.52.036s-1.865-.006-2.52-.036c-.656-.03-1.11-.14-1.364-.232a2.709 2.709 0 0 1-.839-.546 2.709 2.709 0 0 1-.546-.839c-.092-.254-.202-.708-.232-1.364C3.006 9.865 3 9.657 3 8s.006-1.865.036-2.52c.03-.656.14-1.11.232-1.364.132-.34.29-.583.546-.839.256-.256.5-.414.839-.546.254-.092.708-.202 1.364-.232C6.135 3.006 6.343 3 8 3zm0-1.5c-1.68 0-1.896.007-2.556.037-.659.03-1.113.14-1.508.299a4.209 4.209 0 0 0-1.53 1.006A4.209 4.209 0 0 0 1.4 4.473c-.159.395-.269.849-.299 1.508C1.071 6.642 1.064 6.859 1.064 8c0 1.141.007 1.358.037 2.018.03.659.14 1.113.299 1.508.263.654.655 1.188 1.006 1.53.342.352.876.744 1.53 1.006.395.159.849.269 1.508.299.66.03.876.037 2.556.037s1.896-.007 2.556-.037c.659-.03 1.113-.14 1.508-.299a4.209 4.209 0 0 0 1.53-1.006 4.209 4.209 0 0 0 1.006-1.53c.159-.395.269-.849.299-1.508.03-.66.037-.876.037-2.556s-.007-1.896-.037-2.556c-.03-.659-.14-1.113-.299-1.508a4.209 4.209 0 0 0-1.006-1.53 4.209 4.209 0 0 0-1.53-1.006c-.395-.159-.849-.269-1.508-.299C9.896 1.507 9.68 1.5 8 1.5z"
+                      />
+                      <path
+                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"
+                      />
+                      <circle cx="11.75" cy="4.25" r="1" />
+                    </svg>
+                    Instagram
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.youtube.com/@wavestudiointerior"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-youtube"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8.051 1.999h-.002c-.345 0-3.465.007-4.803.37-.94.25-1.683.993-1.933 1.933C1 5.64 1 8 1 8s0 2.36.313 3.698c.25.94.993 1.683 1.933 1.933C4.584 14.007 7.704 14 8.05 14h.002c.345 0 3.465-.007 4.803-.37.94-.25 1.683-.993 1.933-1.933C15 10.36 15 8 15 8s0-2.36-.313-3.698c-.25-.94-.993-1.683-1.933-1.933C11.516 2.006 8.396 2 8.051 2z"
+                      />
+                      <path d="M6.545 5.568v4.864L10.545 8 6.545 5.568z" />
+                    </svg>
+                    YouTube
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="col-lg-6 offset-lg-6">
+            <h4>Subscribe To Our Newsletter</h4>
+            <form id="subscribe" action="" method="get">
+              <div class="row">
+                <div class="col-lg-12">
+                  <input
+                    name="email"
+                    type="text"
+                    id="email"
+                    pattern="[^ @]*@[^ @]*"
+                    placeholder="Type your email..."
+                    required=""
+                  />
+                  <button type="submit" id="form-submit" class="text-button">
+                    Submit
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div> -->
+          <div class="col-lg-12">
+            <div class="sub-footer">
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>
+                    Copyright © <span id="currentYear"></span> Waaves Studio
+                    Interior <br />
+                  </p>
+                </div>
+
+                <div class="col-lg-6">
+                  <a href="#top" class="scroll-to-top">
+                    Go to Top
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-arrow-bar-up"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".loader").fadeToggle();
+      }, 2000);
+      $("a[href='#top']").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+      });
+    </script>
+
+    <!-- Contact Form Popup Modal -->
+    <div class="modal fade" id="contactPopup" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 12px; padding: 20px">
+          <div class="modal-header">
+            <h4 class="modal-title">Send us a Message</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <form id="contact" action="contact.php" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="section-heading">
+                    <h2>
+                      Don't be Hesitated<br /><em>Send a message now</em>!
+                    </h2>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <input
+                    name="name"
+                    type="text"
+                    id="name"
+                    placeholder="Name*"
+                    required
+                  />
+                </div>
+
+                <div class="col-lg-6">
+                  <input
+                    name="phone"
+                    type="text"
+                    id="phone"
+                    placeholder="Phone Number*"
+                    required
+                  />
+                </div>
+
+                <div class="col-lg-6">
+                  <input
+                    name="email"
+                    type="text"
+                    id="email"
+                    pattern="[^ @]*@[^ @]*"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+
+                <!-- <div class="col-lg-6">
+                  <select
+                    name="subject"
+                    id="subject"
+                    required
+                    class="form-control"
+                  >
+                    <option value="" disabled selected>
+                      Select Project Type*
+                    </option>
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                  </select>
+                </div> -->
+
+                <div class="col-lg-12">
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    id="message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="col-lg-12 mt-3">
+                  <button type="submit" id="form-submit" class="main-button">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
